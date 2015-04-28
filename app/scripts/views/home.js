@@ -22,7 +22,6 @@ define([
       $('#bodyContainer').removeClass();
       $('#bodyContainer').addClass('bodyHome');
       $('.circleBase').removeClass('here');
-      $('.circleBase1').addClass('here');
       $('.menubar').removeClass('menuLeft');
       this.$el.html('').hide().fadeIn().slideDown('slow');
       this.$el.append(this.home_template());

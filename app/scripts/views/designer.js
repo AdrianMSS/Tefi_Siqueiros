@@ -2,10 +2,10 @@ define([
   'jquery',
   'underscore',
   'backbone', 
-  'text!../templates/about.html'
-], function ($, _, Backbone, about_template) {
+  'text!../templates/designer.html'
+], function ($, _, Backbone, designer_template) {
   'use strict';
-  var AboutView = Backbone.View.extend({
+  var DesignerView = Backbone.View.extend({
     el: '.content',
     //about_template: _.template(about_template),
     events: {
@@ -19,15 +19,15 @@ define([
 
     render: function() {   
       $('#bodyContainer').removeClass();
-      $('#bodyContainer').addClass('bodyAbout');
+      $('#bodyContainer').addClass('designerAbout');
       $('.circleBase').removeClass('here');
-      $('.circleBase1').addClass('here');
+      $('.circleBase4').addClass('here');
       $('.menubar').addClass('menuLeft');
       this.$el.html('').hide().fadeIn().slideDown('slow');
-      this.$el.append(about_template);
+      this.$el.append(designer_template);
     }
   });
 
-  return AboutView;
+  return DesignerView;
 });
 

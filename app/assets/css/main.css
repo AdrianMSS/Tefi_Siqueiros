@@ -10,7 +10,22 @@
     font-family: vevey_font;
     src: url('../fonts/vevey.ttf');
 }
+@font-face {
+    font-family: franklinGothic_font;
+    src: url('../fonts/franklin.ttf');
+}
 
+/*
+Menú - Gotic
+
+Boton Contacto -   color: #fff;
+  background-color: transparent;
+  border-color: white;
+
+href contacto gris - hover blanco
+
+
+*/
 /* ==========================================================================
    Base Styles and Bootstrap Modifications
    ========================================================================== */
@@ -107,16 +122,24 @@ body {
     transition: all 0.5s linear;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: center center;
 }
 .bodyHome {
-    background-image: url('../img/DSC03969.jpg');
+    background-image: url('../img/homeBack.png');
 }
 .bodyCollection{
     background-image: url('../img/DSC03973.jpg');
 }
 .bodyContact{
     background-image: url('../img/DSC03904.jpg');
+}
+.bodyAbout{
+    background-image: url('../img/aboutBack.png');
+}
+.designerAbout{
+    background-image: url('../img/designerBack.png');
+
 }
 .col-md-4 {
 	padding-bottom: 20px;
@@ -827,35 +850,7 @@ background: url(../img/foto-premio.jpg) no-repeat center top;
     position: fixed;
     min-height: 1000px;
 }
-#homeContainer{
-    margin-top: 15%;
-    padding: 160px;
-    background: rgba(0, 0, 0, 0.5);
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
-    width: 100px;
-    height: 100px;
-}
 
-#homeContainer h1{
-    font-family: vevey_font;
-    width: 600px;
-    color: white;
-    font-size: 80px;
-    position: absolute;
-    margin-left: -200px;
-    margin-top: -10px;
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-#homeContainer span{
-    color: white;
-    position: absolute;
-    font-size: 20px;
-    font-family: monospace;
-}
 .menubar{
     position: fixed;
     top: 88%;
@@ -917,14 +912,6 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
     padding-top: 10%;
     padding-bottom: 5%;
     min-height: 350px;
-}
-#homeContainer img{
-    background: none;
-    margin-left: -135px;
-    margin-top: -35px;
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
 }
 .topNavbar{
     background: rgba(0, 0, 0, 0.75);
@@ -1217,4 +1204,95 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
 #contactContainer div{
     font-size: 25px;
     color: darkgray;
+}
+
+.homeLogo{
+  position: absolute;
+  text-align: center;
+  left: 10%;
+  top: 5%;
+}
+.homeLogo img{
+    background: none;
+    width: 150px;
+}
+.homeLogo h1{
+    font-family: vevey_font;
+    color: white;
+    margin-top: 1px;
+}
+.homeLogo span{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.aboutLogo{
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  top: 5%;
+}
+.aboutLogo img{
+    background: none;
+    width: 150px;
+}
+.aboutLogo h1{
+    font-family: vevey_font;
+    color: white;
+    margin-top: 1px;
+}
+.aboutLogo span{
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    font-family: monospace;
+}
+.aboutText {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    color: white;
+}
+.flex {
+    display: flex;
+}
+.aboutText h1 {
+    text-align: center;
+
+}
+.aboutText span {
+    font-family: vevey_font;
+    position: relative;
+    left: -10%;
+    font-size: 200px;
+}
+.aboutText p {
+    font-family: vevey_font;
+    text-align: left;   
+}
+
+.designerText {
+    position: absolute;
+    top: 30%;
+    color: white;
+}
+.designerText h1 {
+    text-align: center;
+    color: white;
+}
+.designerText h2 {
+    text-align: center;
+    color: white;
+    font-family: vevey_font;
+}
+.designerText h4 {
+    text-align: center;
+    color: white;
+}
+.designerText p {
+    margin-left: 10%;
+    font-family: vevey_font;
+    text-align: left;   
 }
