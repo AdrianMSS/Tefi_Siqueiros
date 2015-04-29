@@ -24,6 +24,9 @@ require.config({
         jquery_form: {
             deps: ['jquery'],
             exports: 'jquery_form'
+        },
+        polyglot: {
+          exports: 'Polyglot'
         }
     },
     paths: {
@@ -33,7 +36,8 @@ require.config({
         bootstrap: '../bower_components/sass-bootstrap/dist/js/bootstrap',
         layoutmanager:   '../bower_components/layoutmanager/backbone.layoutmanager',
         amplify: '../bower_components/amplify/lib/amplify',
-        text: '../bower_components/text/text'
+        text: '../bower_components/text/text',
+        polyglot: '../bower_components/polyglot/lib/polyglot'
     }
 });
 

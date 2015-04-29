@@ -2,8 +2,9 @@ define([
   'jquery',
   'underscore',
   'backbone', 
+  'polyglot',
   'text!../templates/home.html'
-], function ($, _, Backbone, home_template) {
+], function ($, _, Backbone, Polyglot, home_template) {
   'use strict';
   var HomeView = Backbone.View.extend({
     el: '.content',
@@ -19,6 +20,10 @@ define([
     },
 
     render: function() { 
+      var pol = new Polyglot({
+        "hello": "Hello",
+        "bye": "Goodbye"
+      });
       $('#bodyContainer').removeClass();
       $('#bodyContainer').addClass('bodyHome');
       $('.circleBase').removeClass('here');

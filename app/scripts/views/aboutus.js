@@ -7,7 +7,7 @@ define([
   'use strict';
   var AboutView = Backbone.View.extend({
     el: '.content',
-    //about_template: _.template(about_template),
+    about_template: _.template(about_template),
     events: {
     },
 
@@ -24,7 +24,7 @@ define([
       $('.circleBase1').addClass('here');
       $('.menubar').addClass('menuLeft');
       this.$el.html('').hide().fadeIn().slideDown('slow');
-      this.$el.append(about_template);
+      this.$el.append(this.about_template());
     }
   });
 

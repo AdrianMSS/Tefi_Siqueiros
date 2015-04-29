@@ -1,13 +1,15 @@
 define([
   'jquery',
   'underscore',
-  'backbone', 
+  'backbone',  
+  'polyglot',
   'text!../templates/designer.html'
-], function ($, _, Backbone, designer_template) {
+], function ($, _, Backbone, Polyglot, designer_template) {
   'use strict';
   var DesignerView = Backbone.View.extend({
     el: '.content',
-    //about_template: _.template(about_template),
+    designer_template: _.template(designer_template),
+    phrases: {},
     events: {
     },
 
@@ -24,7 +26,7 @@ define([
       $('.circleBase4').addClass('here');
       $('.menubar').addClass('menuLeft');
       this.$el.html('').hide().fadeIn().slideDown('slow');
-      this.$el.append(designer_template);
+      this.$el.append(this.designer_template());
     }
   });
 

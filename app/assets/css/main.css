@@ -14,18 +14,23 @@
     font-family: franklinGothic_font;
     src: url('../fonts/franklin.ttf');
 }
+@font-face {
+    font-family: bodoniCondensedItalic_font;
+    src: url('../fonts/bod_cond_ita.ttf');
+}
+@font-face {
+    font-family: bodoniCondensedRegular_font;
+    src: url('../fonts/bod_cond_reg.ttf');
+}
+@font-face {
+    font-family: bodoniItalic_font;
+    src: url('../fonts/bod_ita.ttf');
+}
+@font-face {
+    font-family: bodoniRegular_font;
+    src: url('../fonts/bod_reg.ttf');
+}
 
-/*
-Menú - Gotic
-
-Boton Contacto -   color: #fff;
-  background-color: transparent;
-  border-color: white;
-
-href contacto gris - hover blanco
-
-
-*/
 /* ==========================================================================
    Base Styles and Bootstrap Modifications
    ========================================================================== */
@@ -128,11 +133,11 @@ body {
 .bodyHome {
     background-image: url('../img/homeBack.png');
 }
-.bodyCollection{
+/*.bodyCollection{
     background-image: url('../img/DSC03973.jpg');
-}
+}*/
 .bodyContact{
-    background-image: url('../img/DSC03904.jpg');
+    background-image: url('../img/aboutBack.png');
 }
 .bodyAbout{
     background-image: url('../img/aboutBack.png');
@@ -839,16 +844,27 @@ text-align: center;
 margin-left: auto;
 margin-right: auto;
 }
-.headerwrap1 {
-background: url(../img/foto-arriba.png) no-repeat center top;
-}
-.headerwrap2 {
-background: url(../img/foto-premio.jpg) no-repeat center top;
-}
 
 #videocontainer {
     position: fixed;
     min-height: 1000px;
+}
+.languagebar{
+    position: fixed;
+    top: 60%;
+    left: 0%;
+    z-index: 1000;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    transition: all 1s linear;   
+}
+.languagebar a{
+    color: white; 
+}
+.languagebar a:hover{
+    color: darkgray; 
 }
 
 .menubar{
@@ -857,6 +873,7 @@ background: url(../img/foto-premio.jpg) no-repeat center top;
     z-index: 1000;
     width: 60%;
     margin-left: 20%;
+    background: rgba(0, 0, 0, 0.5);
     -webkit-transition: all 1s linear;
     -moz-transition: all 1s linear;
     transition: all 1s linear;
@@ -870,10 +887,13 @@ background: url(../img/foto-premio.jpg) no-repeat center top;
     display: inline;
 }
 .menuLeft{
-    padding: 10px;
-    width: 150px;
+    padding-top: 10px;
+    width: 120px;
     top: 150px;
-    right: 50px;
+    right: 0px;
+    -webkit-border-radius:  50px 0 0 50px;
+    -moz-border-radius:  50px 0 0 50px;
+    border-radius: 50px 0 0 50px;
 }
 .menuLeft li{
     display: flex;
@@ -888,8 +908,9 @@ background: url(../img/foto-premio.jpg) no-repeat center top;
     background-repeat: no-repeat;
 }
 .menubar a{
-    font-family: vevey_font;
+    font-family: franklinGothic_font;
     color: lightgray;
+    font-size: smaller;
 }
 .menubar a:hover{
     color: #FFFF7D;
@@ -1154,7 +1175,7 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
 #collectionsContainer div{
     height: 250px;
 }
-.collection1{
+/*.collection1{
     height: 100px;
     background: rgba(0, 0, 0, 0.75);
     background-image: url('../img/DSC03973.jpg');
@@ -1175,7 +1196,7 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
     background: rgba(0, 0, 0, 0.25);
     background-image: url('../img/DSC03904.jpg');
     background-size: cover;
-}
+}*/
 #contactContainer{
     background: rgba(255, 255, 255, 0.25);
     padding: 5%;
@@ -1204,6 +1225,9 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
 #contactContainer div{
     font-size: 25px;
     color: darkgray;
+}
+#contactContainer img{
+    background: transparent;
 }
 
 .homeLogo{
@@ -1260,39 +1284,78 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
 }
 .aboutText h1 {
     text-align: center;
-
+    margin-left: -200px;
+    font-family: bodoniCondensedItalic_font;
+    color: white;
+    font-size: -webkit-xxx-large;
+    margin-top: 50px;
 }
 .aboutText span {
-    font-family: vevey_font;
-    position: relative;
-    left: -10%;
-    font-size: 200px;
+    font-family: bodoniItalic_font;
+    position: absolute;
+    top: 40px;
+    left: -200px;
+    font-size: 300px;
 }
 .aboutText p {
-    font-family: vevey_font;
-    text-align: left;   
+    font-family: bodoniRegular_font;
+    text-align: left;
+    font-size: initial;
 }
 
 .designerText {
     position: absolute;
     top: 30%;
     color: white;
+    margin-right: 10%;
+    left: 3%;
 }
 .designerText h1 {
     text-align: center;
+    font-family: bodoniCondensedItalic_font;
     color: white;
+    font-size: -webkit-xxx-large;
+    margin-top: 50px;
 }
 .designerText h2 {
     text-align: center;
     color: white;
-    font-family: vevey_font;
+    font-family: bodoniCondensedRegular_font;
+    font-size: xx-large;
 }
 .designerText h4 {
     text-align: center;
     color: white;
+    font-family: bodoniCondensedRegular_font;
+    font-size: xx-large;
 }
-.designerText p {
+.designerText label {
+    border-bottom: 1px solid white;
+    margin-left: 15%;
+    font-family: bodoniCondensedRegular_font;
+    text-align: left;
+    font-size: x-large;
+}
+.designerText ul {
     margin-left: 10%;
-    font-family: vevey_font;
+    font-family: bodoniRegular_font;
     text-align: left;   
+    list-style-type: none;
+    font-size: smaller;
+    margin-top: 5px;
+}
+
+#contactContainer a{
+    color: darkgray;
+}
+#contactContainer a:hover{
+    color: white;
+}
+#contactContainer button{
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+#contactContainer button:hover{
+    background-color: black;
 }

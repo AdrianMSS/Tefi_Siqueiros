@@ -1,27 +1,27 @@
 <div class="row">
 	<div id="contactContainer" class="col-lg-7 center">
-		<img src="assets/img/title_logo.png">
-		<h1> S I Q U E I R O S <span class="trademark">TM<span></h1>
+		<a href="#home"><img src="assets/img/title_logo.png"></a>
+		<a href="#home"><h1> S I Q U E I R O S <span class="trademark">TM<span></h1></a>
 		<img src="assets/img/title_line.png">
-		<h3>Háganos sus</h3>
-		<h2>P R E G U N T A S</h2>
+		<h3><%= polyglot.t('contactTitle') %></h3>
+		<h2><%= polyglot.t('contactSubtitle') %></h2>
 		<div class="col-lg-6">
 			<br>
-			<span class="icon icon-phone"></span><span> +506 8888-8888 </span><br/>
-			<span class="icon icon-mobile"></span><span> +506 8328 0431 </span><br/>
+			<span class="icon icon-phone"></span><a> +506 8888-8888 </a><br/>
+			<span class="icon icon-mobile"></span><a> +506 8328 0431 </a><br/>
 			<span class="icon icon-envelop"></span> <a href="#"> es.siqueiros@gmail.com</a> <br/>
 			<span class="icon icon-facebook"></span> <a href="#"> Siqueiros</a> <br/>
 		</div>
 		<div class="col-lg-6">
 			<form class="form-horizontal" role="form">
 			  	<div class="form-group">
-			      <input type="email" class="form-control" id="inputEmail" placeholder="Correo">
+			      <input type="email" class="form-control" id="inputEmail" placeholder=<%= polyglot.t('formMail') %>>
 			      <br>
-			      <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+			      <input type="text" class="form-control" id="inputName" placeholder=<%= polyglot.t('formName') %>>
 			      <br>
-			      <textarea type="textfield" class="form-control" id="inputText" placeholder="Consulta"></textarea>
+			      <textarea type="textfield" class="form-control" id="inputText" placeholder=<%= polyglot.t('formQuestion') %>></textarea>
 			      <br>
-			      <button class="btn btn-success" id="formSend">Enviar</button>
+			      <button class="btn btn-success" id="formSend"><%= polyglot.t('formSend') %></button>
 			    </div>
 		   </form><!-- form -->
 		  <label class="hidden alert alert-danger" id="formError">Mensaje No Enviado, Intentelo de Nuevo</label> 
