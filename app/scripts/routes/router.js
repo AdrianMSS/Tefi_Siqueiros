@@ -9,9 +9,11 @@ define([
   'views/aboutus',
   'views/designer',
   'views/menu',
+  'views/lang',
   'text!../../assets/locales/es.json',
-  'text!../../assets/locales/en.json'
-], function ($, Backbone, Polyglot, collectionsView, homeView, contactView, aboutusView, designerView, menuView, localEs, localEn) {
+  'text!../../assets/locales/en.json',
+  'text!../../assets/locales/fr.json'
+], function ($, Backbone, Polyglot, collectionsView, homeView, contactView, aboutusView, designerView, menuView, langView, localEs, localEn, localFr) {
   'use strict';
 
   var CollectionsView = new collectionsView(),
@@ -20,16 +22,18 @@ define([
     AboutUsView = new aboutusView(),
     DesignerView = new designerView(),
     MenuView = new menuView(),
+    LangView = new langView(),
     Router = Backbone.Router.extend({
       routes: {
-          '':     'home',
           'home': 'home',
           'collection': 'collection',
           'contact': 'contact',
           'about': 'about',
           'designer': 'designer',
           'en': 'en',
-          'es': 'es'
+          'es': 'es',
+          'fr': 'fr',
+          'lang': 'lang'
       },
       objectLocal : {},
       menuRender : false,
@@ -37,20 +41,26 @@ define([
       initialize: function() {
         this.objectLocal = {
           'es': localEs,
-          'en': localEn
+          'en': localEn,
+          'fr': localFr
         };
-        var locale = localStorage.getItem('locale') || 'es',
-          localArray = this.objectLocal[locale].split("'");
-        window.polyglot = new Polyglot();
-        for(var i=0; i<=localArray.length-2; i++){
-          var x = localArray[i+1].toString(),
-              y = localArray[i+3],
-              phrase = {};
-            phrase[x] = y;
-          console.log(phrase);
-          window.polyglot.extend(phrase);
-          i=i+3;
-        };
+        var locale = localStorage.getItem('locale');
+        if(locale == null){
+          window.location.href ='#lang';
+        }
+        else{
+          var localArray = this.objectLocal[locale].split("'");
+          window.polyglot = new Polyglot();
+          for(var i=0; i<=localArray.length-2; i++){
+            var x = localArray[i+1].toString(),
+                y = localArray[i+3],
+                phrase = {};
+              phrase[x] = y;
+            window.polyglot.extend(phrase);
+            i=i+3;
+          };
+          window.location.href ='#home';
+        }
       },
 
       en: function() {
@@ -62,12 +72,16 @@ define([
               y = localArray[i+3],
               phrase = {};
             phrase[x] = y;
-          console.log(phrase);
           window.polyglot.extend(phrase);
           i=i+3;
         };
-        this.menuRender = false;
-        window.history.back();
+        if(this.menuRender){
+          this.menuRender = false;
+          window.history.back(); 
+        }
+        else{
+          window.location.href ='#home'; 
+        }
       },
 
       es: function() {
@@ -79,12 +93,41 @@ define([
               y = localArray[i+3],
               phrase = {};
             phrase[x] = y;
-          console.log(phrase);
           window.polyglot.extend(phrase);
           i=i+3;
         };
-        this.menuRender = false;
-        window.history.back();
+        if(this.menuRender){
+          this.menuRender = false;
+          window.history.back(); 
+        }
+        else{
+          window.location.href ='#home'; 
+        }
+      },
+
+      fr: function() {
+        localStorage.setItem('locale', 'fr');
+        var localArray = this.objectLocal['fr'].split("'");
+        window.polyglot = new Polyglot();
+        for(var i=0; i<=localArray.length-2; i++){
+          var x = localArray[i+1].toString(),
+              y = localArray[i+3],
+              phrase = {};
+            phrase[x] = y;
+          window.polyglot.extend(phrase);
+          i=i+3;
+        };
+        if(this.menuRender){
+          this.menuRender = false;
+          window.history.back(); 
+        }
+        else{
+          window.location.href ='#home'; 
+        }
+      },
+
+      lang: function(){
+        LangView.render();
       },
 
       home: function() {

@@ -1,0 +1,18 @@
+{
+  'menuCollection': 'Collection',
+  'menuShop': 'Achats',
+  'menuDesigner': 'Designer',
+  'menuStylism': 'Stylisme',
+  'menuContact': 'Contact',
+  'homeTitle': 'is the perfect complement for contemporary women.',
+  'aboutTitle1': 'À propos de Siqueiros',
+  'aboutTitle2': 'Responsabilité Sociale',
+  'aboutText1': '<span>S</span><p>iqueiros est le complément parfait de la femme contemporaine, de celles qui marchent avec assurance. Avec de grands défis et de grandes ambitions. Et qui, dans une ambiance urbaine, connaissent l’importance d’une vie saine. Ce sont des femmes cultivées et conscientes de la société, qui marchent à travers le succès et qui croient qu’il n’existe pas de limites. Pour elles, Siqueiros offre des collections contemporaines et intelligentes qui redent plus pratique la vie de tout les jours. En fondant l’esthétique et les dernierès tendances de la mode dans la vie quotidienne. </p>',
+  'aboutText2': '<span>D</span><p>ans notre entreprise, nous somme conscients de l’environnement social et de l’environnement. De ce fait, nous mettons en pratique la responsabilité sociale de l’entreprise. Au sein de nos pratiques, les procédés chimiques, non-nocifs pour l’environnement. De plus, nous avons comme objectif de produire sans pertes. Pour atteindre ces fins, tout les restes des collections diminuent et sont mélangés avec des plumes utilisées pour des oreillers donnés à l’hospice des orphelins de San José au Costa Rica. Joins-toi à cette cause!</p>',
+  'contactTitle': 'Envoyez-nous Vos ',
+  'contactSubtitle': 'Q U E S T I O N S',
+  'formMail': 'Courrier',
+  'formName': 'Nom',
+  'formQuestion': 'Question',
+  'formSend': 'Envoyer'
+}

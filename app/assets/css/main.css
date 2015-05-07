@@ -121,17 +121,44 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: #FFFFFF;
     -webkit-transition: all 0.5s linear;
     -moz-transition: all 0.5s linear;
     transition: all 0.5s linear;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
-    background-position: center center;
+    background-size: 100% 130%;
+    background-position: center top;
+}
+
+.bodyLang{
+    background-color: #000000;
+}
+#langDiv{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+#langDiv video{
+  max-width: 70%;
+  position: fixed;
+  top: 5%;
+  left: 15%;
+}
+
+#langDiv h1{
+  color: white;
+  padding: 30px;
+}
+#langDiv a{
+    color: white;
+    padding: 30px;
+    font-size: x-large;
 }
 .bodyHome {
-    background-image: url('../img/homeBack.png');
+    background-image: url('../img/pri.png');
 }
 /*.bodyCollection{
     background-image: url('../img/DSC03973.jpg');
@@ -1132,6 +1159,7 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
 .homeMSG h1{
     color: white;
     font-size: 15px;
+    font-family:franklinGothic_font;
 }
 .homeMSG span{
     padding-bottom: 10px;
@@ -1283,8 +1311,7 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
     display: flex;
 }
 .aboutText h1 {
-    text-align: center;
-    margin-left: -200px;
+    text-align: left;
     font-family: bodoniCondensedItalic_font;
     color: white;
     font-size: -webkit-xxx-large;
@@ -1308,38 +1335,33 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
     top: 30%;
     color: white;
     margin-right: 10%;
-    left: 3%;
+    left: 10%;
+    text-align: left;
 }
 .designerText h1 {
-    text-align: center;
     font-family: bodoniCondensedItalic_font;
     color: white;
     font-size: -webkit-xxx-large;
     margin-top: 50px;
 }
 .designerText h2 {
-    text-align: center;
     color: white;
     font-family: bodoniCondensedRegular_font;
     font-size: xx-large;
 }
 .designerText h4 {
-    text-align: center;
     color: white;
     font-family: bodoniCondensedRegular_font;
     font-size: xx-large;
 }
 .designerText label {
+    margin-left: 15px;
     border-bottom: 1px solid white;
-    margin-left: 15%;
     font-family: bodoniCondensedRegular_font;
-    text-align: left;
     font-size: x-large;
 }
 .designerText ul {
-    margin-left: 10%;
-    font-family: bodoniRegular_font;
-    text-align: left;   
+    font-family: bodoniRegular_font;   
     list-style-type: none;
     font-size: smaller;
     margin-top: 5px;
