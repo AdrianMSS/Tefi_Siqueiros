@@ -3,8 +3,6 @@
 * @author Adrián Sánchez <sesamaua@gmail.com>
 */
 
-var template_engine = 'dust';
-
 var express = require('express'),
     winston = require('winston'),
     cookieParser = require('cookie-parser'),
@@ -28,13 +26,6 @@ var transporter  = nodemailer.createTransport({
 app.use(express.logger('dev'));     /* 'default', 'short', 'tiny', 'dev' */
 app.use(bodyParser());
 app.use(express.static(__dirname + '/app'));
-
-
-if ( template_engine == 'dust' ) {
-    var dust = require('dustjs-linkedin'),
-        cons = require('consolidate');
-    app.engine('dust', cons.dust);
-} 
 
 
 var logger = new (winston.Logger)({
