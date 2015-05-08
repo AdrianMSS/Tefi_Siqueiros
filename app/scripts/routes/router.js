@@ -30,6 +30,7 @@ define([
           'contact': 'contact',
           'about': 'about',
           'designer': 'designer',
+          'collection': 'collection',
           'en': 'en',
           'es': 'es',
           'fr': 'fr',
@@ -139,11 +140,11 @@ define([
       },
 
       collection: function() {
-          /*if(!this.menuRender){
+          if(!this.menuRender){
             MenuView.render();
             this.menuRender = true;
           }
-          CollectionsView.render();*/
+          CollectionsView.render();
       },
 
       contact: function() {

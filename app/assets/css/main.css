@@ -171,9 +171,10 @@ body {
 .bodyHome {
     background-image: url('../img/pri.png');
 }
-/*.bodyCollection{
-    background-image: url('../img/DSC03973.jpg');
-}*/
+.bodyCollection{
+    background-image: url('../img/coleccion.png');
+    background-size: 100% 100%;
+}
 .bodyContact{
     background-image: url('../img/aboutBack.png');
 }
