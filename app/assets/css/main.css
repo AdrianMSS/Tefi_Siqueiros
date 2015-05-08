@@ -169,7 +169,7 @@ body {
     bottom: 0px;
 }
 .bodyHome {
-    background-image: url('../img/pri.png');
+    background-image: url('../img/home.png');
 }
 .bodyCollection{
     background-image: url('../img/coleccion2.png');
@@ -1376,6 +1376,66 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
     list-style-type: none;
     font-size: large;
     margin-top: 5px;
+}
+
+.collectionsText {
+    position: absolute;
+    top: 30%;
+    color: white;
+    margin-right: 10%;
+    left: 10%;
+    text-align: center;
+}
+.collectionsText h1 {
+    font-family: bodoniCondensedItalic_font;
+    color: white;
+    font-size: -webkit-xxx-large;
+    margin-top: 50px;
+}
+.collectionsText img{
+    width: 100%;
+}
+.collectionsText p{
+    font-family: bodoniRegular_font;
+    text-align: justify;
+    font-size: initial;
+}
+.collectionsText button{
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+.collectionsText button:hover{
+    background-color: darkgray;
+}
+.insulationText{
+    position: absolute;
+    color: white;
+    margin-right: 10%;
+    left: 10%;
+    text-align: center;
+}
+.insulationText h1 {
+    font-family: vevey_font;
+    color: white;
+    font-size: -webkit-xxx-large;
+}
+.insulationText img{
+    background-color: transparent;
+}
+.insulationText p{
+    font-family: bodoniRegular_font;
+    text-align: justify;
+    font-size: initial;
+}
+.imageView{
+    width: 100%;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.imagePreview img{
+    width: 30%;
 }
 
 #contactContainer a{
