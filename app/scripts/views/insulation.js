@@ -2,14 +2,14 @@ define([
   'jquery',
   'underscore',
   'backbone', 
-  'text!../templates/collections.html'
-], function ($, _, Backbone, collections_template) {
+  'text!../templates/insulation.html'
+], function ($, _, Backbone, insulation_template) {
   'use strict';
-  var CollectionsView = Backbone.View.extend({
+  var InsulationView = Backbone.View.extend({
     el: '.content',
-    collections_template: _.template(collections_template),
+    insulation_template: _.template(insulation_template),
     events: {
-      'click button': 'goCollection'
+      'click .imagePreview img': 'viewImg'
     },
 
     initialize: function (options) {
@@ -20,20 +20,22 @@ define([
 
     render: function() {   
       $('#bodyContainer').removeClass();
-      $('#bodyContainer').addClass('bodyCollection');
       $('.circleBase').removeClass('here');
       $('.circleBase2').addClass('here');
       $('.menubar').addClass('menuLeft');
       this.$el.html('').hide().fadeIn().slideDown('slow');
-      this.$el.append(this.collections_template());
+      this.$el.append(this.insulation_template());
     },
 
-    goCollection: function(e){
-      var ref = '#'+e.currentTarget.id;
-      window.location.href = ref;
+    viewImg: function(e){
+      $(".imageView")
+        .fadeOut(500, function() {
+            $(".imageView").attr("src","assets/img/"+e.currentTarget.className+".jpg");
+        })
+        .fadeIn(200);
     }
   });
 
-  return CollectionsView;
+  return InsulationView;
 });
 

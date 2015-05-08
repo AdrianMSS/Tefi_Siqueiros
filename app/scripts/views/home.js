@@ -33,20 +33,6 @@ define([
     },
 
     keyPressed: function(e) {
-      console.log(e);
-      /*if(e.keyCode == 13 && this.modalUp == false){
-        this.loginFunct();
-      } 
-      else if(e.keyCode == 39 && this.manualPage < 7){
-        this.manualPage ++;        
-        var now = '.help-button.' + this.manualPage.toString();
-        $(now).click();
-      }
-      else if(e.keyCode == 37 && this.manualPage > 1){
-        this.manualPage --;      
-        var now = '.help-button.' + this.manualPage.toString();
-        $(now).click();
-      } */
     }
   });
 

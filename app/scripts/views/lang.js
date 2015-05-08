@@ -6,7 +6,7 @@ define([
   'text!../templates/language.html'
 ], function ($, _, Backbone, video_template, language_template) {
   'use strict';
-  var MenuView = Backbone.View.extend({
+  var LangView = Backbone.View.extend({
     el: '.content',
     video_template: _.template(video_template),
     language_template: _.template(language_template),
@@ -37,6 +37,6 @@ define([
     }
   });
 
-  return MenuView;
+  return LangView;
 });
 

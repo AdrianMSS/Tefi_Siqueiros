@@ -10,10 +10,11 @@ define([
   'views/designer',
   'views/menu',
   'views/lang',
+  'views/insulation',
   'text!../../assets/locales/es.json',
   'text!../../assets/locales/en.json',
   'text!../../assets/locales/fr.json'
-], function ($, Backbone, Polyglot, collectionsView, homeView, contactView, aboutusView, designerView, menuView, langView, localEs, localEn, localFr) {
+], function ($, Backbone, Polyglot, collectionsView, homeView, contactView, aboutusView, designerView, menuView, langView, insulationView, localEs, localEn, localFr) {
   'use strict';
 
   var CollectionsView = new collectionsView(),
@@ -23,6 +24,7 @@ define([
     DesignerView = new designerView(),
     MenuView = new menuView(),
     LangView = new langView(),
+    InsulationView = new insulationView(),
     Router = Backbone.Router.extend({
       routes: {
           'home': 'home',
@@ -34,7 +36,8 @@ define([
           'en': 'en',
           'es': 'es',
           'fr': 'fr',
-          'lang': 'lang'
+          'lang': 'lang',
+          'insulation': 'insulation'
       },
       objectLocal : {},
       menuRender : false,
@@ -169,6 +172,14 @@ define([
             this.menuRender = true;
           }
           DesignerView.render();
+      },
+
+      insulation: function(){
+          if(!this.menuRender){
+            InsulationView.render();
+            this.menuRender = true;
+          }
+          InsulationView.render();
       }
   });
   return Router;
