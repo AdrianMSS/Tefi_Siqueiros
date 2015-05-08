@@ -16,19 +16,19 @@
 }
 @font-face {
     font-family: bodoniCondensedItalic_font;
-    src: url('../fonts/bod_cond_ita.ttf');
+    src: url('../fonts/bod_cond_ita.TTF');
 }
 @font-face {
     font-family: bodoniCondensedRegular_font;
-    src: url('../fonts/bod_cond_reg.ttf');
+    src: url('../fonts/bod_cond_reg.TTF');
 }
 @font-face {
     font-family: bodoniItalic_font;
-    src: url('../fonts/bod_ita.ttf');
+    src: url('../fonts/bod_ita.TTF');
 }
 @font-face {
     font-family: bodoniRegular_font;
-    src: url('../fonts/bod_reg.ttf');
+    src: url('../fonts/bod_reg.TTF');
 }
 
 /* ==========================================================================
