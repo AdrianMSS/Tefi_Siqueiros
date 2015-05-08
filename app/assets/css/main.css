@@ -126,7 +126,7 @@ body {
     transition: all 0.5s linear;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 130%;
+    background-color: black;
     background-position: center top;
 }
 
@@ -151,11 +151,22 @@ body {
 #langDiv h1{
   color: white;
   padding: 30px;
+  font-family: vevey_font;
 }
 #langDiv a{
     color: white;
     padding: 30px;
     font-size: x-large;
+}
+.skipButton{  
+    font-size: xx-large;
+    color: white;
+    padding-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+    position: fixed;
+    margin: auto;
+    bottom: 0px;
 }
 .bodyHome {
     background-image: url('../img/pri.png');
@@ -1320,7 +1331,7 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
 .aboutText span {
     font-family: bodoniItalic_font;
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: -200px;
     font-size: 300px;
 }

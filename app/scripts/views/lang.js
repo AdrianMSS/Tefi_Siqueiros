@@ -11,6 +11,7 @@ define([
     video_template: _.template(video_template),
     language_template: _.template(language_template),
     events: {
+      'click .skipButton': 'videoEnded'
     },
 
     initialize: function (options) {
