@@ -173,7 +173,7 @@ body {
 }
 .bodyCollection{
     background-image: url('../img/coleccion.png');
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
 }
 .bodyContact{
     background-image: url('../img/aboutBack.png');
