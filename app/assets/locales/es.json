@@ -14,5 +14,14 @@
   'formMail': 'Correo',
   'formName': 'Nombre',
   'formQuestion': 'Consulta',
-  'formSend': 'Enviar'
+  'formSend': 'Enviar',
+  'designerTitle': 'Acerca de la Diseñadora',
+  'designerSubtitle': 'Diseñadora de Modas de la Universidad Creativa',
+  'designerItem1': 'Desfiles',
+  'designerItem2': 'Styling',
+  'designerItem1a': 'Participación en la pasarela para la cena benéfica de la Cámara ItaloCostarricense “ Notte di moda, La Dolce Vita”. 2012',
+  'designerItem1b': 'Pasarela Emerge Mercedes Benz Fashion Week San Jose 2014',
+  'designerItem1c': 'Pasarela Emerge Mercedes Benz Fashion Week San Jose 2015',
+  'designerItem2a': 'Styling para seminario de fotografía de moda “Desde la toma hasta el producto final” de la Universidad Creativa impartivo por el fotógrafo Mato Farroni.',
+  'designerItem2b': 'Asistente de Styling y producción para revista Traffic.'
 }

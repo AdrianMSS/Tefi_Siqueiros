@@ -14,5 +14,14 @@
   'formMail': 'Courrier',
   'formName': 'Nom',
   'formQuestion': 'Question',
-  'formSend': 'Envoyer'
+  'formSend': 'Envoyer',
+  'designerTitle': 'À Propos du Styliste',
+  'designerSubtitle': 'Styliste de la Universidad Creativa',
+  'designerItem1': 'Défilé de Mode',
+  'designerItem2': 'Style',
+  'designerItem1a': 'Dîner de charité “Càmara Italo-Costarricense” “Notte di moda, La Dolce Vita” 2012',
+  'designerItem1b': '“Emerge” Mercedes Benz Fashion Week San Jose 2014',
+  'designerItem1c': '“Emerge” Mercedes Benz Fashion Week San Jose 2015',
+  'designerItem2a': 'Style Pour la photographie de mode séminaire “Desde la toma hasta el producto final” of Universidad Creativa donnée par Mato Farroni de l'Argentine.',
+  'designerItem2b': 'Assistant de Style et de production dans le  Traffic magazine.'
 }

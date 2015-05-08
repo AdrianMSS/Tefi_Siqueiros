@@ -14,5 +14,14 @@
   'formMail': 'Mail',
   'formName': 'Name',
   'formQuestion': 'Question',
-  'formSend': 'Send'
+  'formSend': 'Send',
+  'designerTitle': 'About the Designer',
+  'designerSubtitle': 'Fashion Designer from Universidad Creativa',
+  'designerItem1': 'Runways',
+  'designerItem2': 'Styling',
+  'designerItem1a': 'Runway for charity dinner from “Càmara Italo-Costarricense” “Notte di moda, La Dolce Vita” 2012',
+  'designerItem1b': 'Runway Emerge Mercedes Benz Fashion Week San Jose 2014',
+  'designerItem1c': 'Runway Emerge Mercedes Benz Fashion Week San Jose 2015',
+  'designerItem2a': 'Styling for Fashion Photography seminar “Desde la toma hasta el producto final” of Universidad Creativa given by Mato Farroni from Argentina.',
+  'designerItem2b': 'Styling and production assistant in Traffic Magazine.'
 }
