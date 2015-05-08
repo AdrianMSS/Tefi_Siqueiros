@@ -11,10 +11,12 @@ define([
   'views/menu',
   'views/lang',
   'views/insulation',
+  'views/styling',
+  'views/shop',
   'text!../../assets/locales/es.json',
   'text!../../assets/locales/en.json',
   'text!../../assets/locales/fr.json'
-], function ($, Backbone, Polyglot, collectionsView, homeView, contactView, aboutusView, designerView, menuView, langView, insulationView, localEs, localEn, localFr) {
+], function ($, Backbone, Polyglot, collectionsView, homeView, contactView, aboutusView, designerView, menuView, langView, insulationView, stylingView, shopView, localEs, localEn, localFr) {
   'use strict';
 
   var CollectionsView = new collectionsView(),
@@ -25,6 +27,8 @@ define([
     MenuView = new menuView(),
     LangView = new langView(),
     InsulationView = new insulationView(),
+    StylingView = new stylingView(),
+    ShopView = new shopView(),
     Router = Backbone.Router.extend({
       routes: {
           'home': 'home',
@@ -37,7 +41,9 @@ define([
           'es': 'es',
           'fr': 'fr',
           'lang': 'lang',
-          'insulation': 'insulation'
+          'insulation': 'insulation',
+          'styling': 'styling',
+          'shop': 'shop'
       },
       objectLocal : {},
       menuRender : false,
@@ -180,6 +186,22 @@ define([
             this.menuRender = true;
           }
           InsulationView.render();
+      },
+
+      styling: function(){
+          if(!this.menuRender){
+            StylingView.render();
+            this.menuRender = true;
+          }
+          StylingView.render();
+      },
+
+      shop: function(){
+          if(!this.menuRender){
+            ShopView.render();
+            this.menuRender = true;
+          }
+          ShopView.render();
       }
   });
   return Router;

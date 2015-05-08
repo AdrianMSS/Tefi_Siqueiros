@@ -2,12 +2,12 @@ define([
   'jquery',
   'underscore',
   'backbone', 
-  'text!../templates/insulation.html'
-], function ($, _, Backbone, insulation_template) {
+  'text!../templates/styling.html'
+], function ($, _, Backbone, styling_template) {
   'use strict';
-  var InsulationView = Backbone.View.extend({
+  var StylingView = Backbone.View.extend({
     el: '.content',
-    insulation_template: _.template(insulation_template),
+    styling_template: _.template(styling_template),
     events: {
       'click .imagePreview img': 'viewImg'
     },
@@ -21,10 +21,10 @@ define([
     render: function() {   
       $('#bodyContainer').removeClass();
       $('.circleBase').removeClass('here');
-      $('.circleBase2').addClass('here');
+      $('.circleBase5').addClass('here');
       $('.menubar').addClass('menuLeft');
       this.$el.html('').hide().fadeIn().slideDown('slow');
-      this.$el.append(this.insulation_template());
+      this.$el.append(this.styling_template());
       $("html, body").animate({ scrollTop: 0 }, 'slow');
     },
 
@@ -37,6 +37,6 @@ define([
     }
   });
 
-  return InsulationView;
+  return StylingView;
 });
 
