@@ -182,7 +182,7 @@ define([
 
       insulation: function(){
           if(!this.menuRender){
-            InsulationView.render();
+            MenuView.render();
             this.menuRender = true;
           }
           InsulationView.render();
@@ -190,7 +190,7 @@ define([
 
       styling: function(){
           if(!this.menuRender){
-            StylingView.render();
+            MenuView.render();
             this.menuRender = true;
           }
           StylingView.render();
@@ -198,7 +198,7 @@ define([
 
       shop: function(){
           if(!this.menuRender){
-            ShopView.render();
+            MenuView.render();
             this.menuRender = true;
           }
           ShopView.render();
