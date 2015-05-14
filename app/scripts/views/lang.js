@@ -11,7 +11,8 @@ define([
     video_template: _.template(video_template),
     language_template: _.template(language_template),
     events: {
-      'click .skipButton': 'videoEnded'
+      'click .skipButton': 'videoEnded',
+      'onStateChange': 'videoEnded'
     },
 
     initialize: function (options) {
@@ -25,10 +26,6 @@ define([
       $('#bodyContainer').addClass('bodyLang');
       this.$el.html('').hide().fadeIn().slideDown('slow');
       this.$el.append(this.video_template());
-      $('.siqVideo')[0].autoplay = true;  
-      $('.siqVideo')[0].onended = function(e) {
-        this.videoEnded();
-      }.bind(this); 
     },
 
     videoEnded: function(){

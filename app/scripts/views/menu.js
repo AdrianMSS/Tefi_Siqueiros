@@ -6,9 +6,10 @@ define([
 ], function ($, _, Backbone, menu_template) {
   'use strict';
   var MenuView = Backbone.View.extend({
-    el: '.menubar',
+    el: '.menus',
     menu_template: _.template(menu_template),
     events: {
+      'click ul': 'hideMenu'
     },
 
     initialize: function (options) {
@@ -20,6 +21,10 @@ define([
     render: function() {
       this.$el.html('').hide().fadeIn().slideDown('slow');
       this.$el.append(this.menu_template());
+    },
+
+    hideMenu: function(){
+      $('.navbar-collapse').removeClass('in');
     }
   });
 

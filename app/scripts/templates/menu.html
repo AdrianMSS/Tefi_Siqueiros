@@ -3,41 +3,60 @@
     <a href="#es">ES</a><br>
     <a href="#fr">FR</a>
 </div>
-<ul>
-    <li>
-        <div class="col-lg-2">
-            <div class="circleBase circleBase1"></div>
-            <a href="#about">Siqueiros</a>
-        </div>
-    </li>
-    <li>    
-        <div class="col-lg-2">
-            <div class="circleBase circleBase2"></div>
-            <a href="#collection"><%= polyglot.t('menuCollection') %></a>
-        </div>
-    </li>
-    <li>    
-        <div class="col-lg-2">
-            <div class="circleBase circleBase3"></div>
-            <a href="#shop"><%= polyglot.t('menuShop') %></a>
-        </div>
-    </li>
-    <li>    
-        <div class="col-lg-2">
-            <div class="circleBase circleBase4"></div>
-            <a href="#designer"><%= polyglot.t('menuDesigner') %></a>
-        </div>
-    </li>
-    <li>    
-        <div class="col-lg-2">
-            <div class="circleBase circleBase5"></div>
-            <a href="#styling"><%= polyglot.t('menuStylism') %></a>
-        </div>
-    </li>
-    <li>    
-        <div class="col-lg-2">
-            <div class="circleBase circleBase6"></div>
-            <a href="#contact"><%= polyglot.t('menuContact') %></a>
-        </div>
-    </li>
-</ul>
+<div class="menubar row center">
+    <ul>
+        <li>
+            <div class="col-lg-2">
+                <div class="circleBase circleBase1"></div>
+                <a href="#about">Siqueiros</a>
+            </div>
+        </li>
+        <li>    
+            <div class="col-lg-2">
+                <div class="circleBase circleBase2"></div>
+                <a href="#collection"><%= polyglot.t('menuCollection') %></a>
+            </div>
+        </li>
+        <li>    
+            <div class="col-lg-2">
+                <div class="circleBase circleBase3"></div>
+                <a href="#shop"><%= polyglot.t('menuShop') %></a>
+            </div>
+        </li>
+        <li>    
+            <div class="col-lg-2">
+                <div class="circleBase circleBase4"></div>
+                <a href="#designer"><%= polyglot.t('menuDesigner') %></a>
+            </div>
+        </li>
+        <li>    
+            <div class="col-lg-2">
+                <div class="circleBase circleBase5"></div>
+                <a href="#styling"><%= polyglot.t('menuStylism') %></a>
+            </div>
+        </li>
+        <li>    
+            <div class="col-lg-2">
+                <div class="circleBase circleBase6"></div>
+                <a href="#contact"><%= polyglot.t('menuContact') %></a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="navbar navbar-inverse navbar-fixed-top hidden">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#home" class="smoothScroll">Home</a></li>
+        <li><a href="#about">Siqueiros</a></li>   
+        <li><a href="#collection"><%= polyglot.t('menuCollection') %></a></li>            
+        <li><a href="#shop"><%= polyglot.t('menuShop') %></a></li>
+        <li><a href="#designer"><%= polyglot.t('menuDesigner') %></a></li>
+        <li><a href="#styling"><%= polyglot.t('menuStylism') %></a></li>
+        <li><a href="#contact"><%= polyglot.t('menuContact') %></li>
+    </div><!--/.nav-collapse -->
+</div>

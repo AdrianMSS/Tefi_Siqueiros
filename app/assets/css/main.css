@@ -46,6 +46,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    background-color: black;
 }
 
 /*
@@ -116,7 +117,6 @@ body {
 }
 
 #bodyContainer {
-    top:0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -138,14 +138,10 @@ body {
     width: 80%;
     height: 80%;
     margin: auto;
-    margin-top: 100px;
     text-align: center;
 }
-#langDiv video{
+#player{
   max-width: 70%;
-  position: fixed;
-  top: 5%;
-  left: 15%;
 }
 
 #langDiv h1{
@@ -758,157 +754,6 @@ a:after {
 	}
 }
 
-
-/*----------------Hardwarethon---------------*/
-
-.navbar-image {
-    margin-top: -12px;
-    background: transparent;
-}
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #4674B7;
-    font-weight: bold;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: #4674B7;
-}
-
-.navbar-inverse{
-    background-color: #142323;
-    width: 100%;
-}
-
-.title-border{
-    border-bottom: 4px solid #4674B7;
-    border-top: 4px solid #4674B7;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.first_word{
-    color: #9AB239;
-    font-weight: bold;
-    font-size: x-large;
-}
-
-p {
-    font-size: larger;
-}
-
-
-.paragraph{
-    font-size: larger;
-    text-align: left;
-}
-
-.values_list p{
-    margin-bottom: 0px;
-}
-
-.icon-linkedin{
-    color: #3498db;
-    font-size: 110%;
-}
-
-.divider1 .container{
-    background:rgba(0, 0, 0, 0.5);
-}
-.subtitle{
-    font-size: 60%;
-}
-.div_content.movein{
-  transform: translate3d(0, 0, 0);
-}
-.div_content{
-  transition: transform 1s ease;
-  transform: translate3d(100%, 0, 0);
-}
-.inside_center{
-    width: 60%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.btn-submit{
-    background-color: #F15A24;
-    color: #EBECED;
-}
-
-.btn-submit2{
-    background-color: #F15A24;
-    color: #EBECED;
-display: inline-block;
-padding: 6px 12px;
-margin-bottom: 0;
-font-size: 20px;
-font-weight: normal;
-line-height: 1.428571429;
-text-align: center;
-white-space: nowrap;
-vertical-align: middle;
-cursor: pointer;
--webkit-user-select: none;
-background-image: none;
-border: 1px solid transparent;
-border-radius: 4px;
-}
-
-.form_input{
-    border-top: 0px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 100px solid #0f3133;
-    background-color: #8CBDE0;
-    margin-left: -50px;
-    color: white;
-    font-weight: bold;
-    padding: 0px;
-    display: inline;
-}
-
-.form_text{
-    display: inline;
-    margin-left: -80px;
-}
-.form-group{
-    display: inline;
-}
-.title {
-color: white;
-font-size: 28px;
-font-weight: bold;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-}
-.title2 {
-color: white;
-font-size: 18px;
-font-weight: bold;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-}
-.title3 {
-color: #D25E37;
-font-size: 18px;
-font-weight: bold;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-}
-.title4 {
-color: #D25E37;
-font-size: 28px;
-font-weight: bold;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-}
-
 #videocontainer {
     position: fixed;
     min-height: 1000px;
@@ -997,149 +842,6 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
     padding-top: 10%;
     padding-bottom: 5%;
     min-height: 350px;
-}
-.topNavbar{
-    background: rgba(0, 0, 0, 0.75);
-    width: 90%;
-    height: auto;
-    top: 0;
-    left: 0;
-    position: absolute;
-    padding: 20px;
-    -webkit-border-radius: 0px 0px 100% 0px;
-    -moz-border-radius: 0px 0px 100% 0px;
-    border-radius: 0px 0px 100% 0px;
-}
-.topNavbar h2{
-    font-size: 25px;
-    color: white;
-    padding-right: 100px;
-    font-weight: bold;
-}
-
-#homeNavbar span{
-    color: red;
-}
-#educationNavbar span{
-    color: green;
-}
-
-#aboutusNavbar span{
-    color: #4674B7;
-}
-.container{
-    padding-top: 200px;
-    padding-right: 100px;
-}
-#educationDiv .col-lg-5{
-    margin: 15px;
-    overflow: hidden;
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-    background: rgba(255, 255, 255, 0.25); 
-    -webkit-border-radius: 10% 0px 10% 0px;
-    -moz-border-radius: 10% 0px 10% 0px;
-    border-radius: 10% 0px 10% 0px;
-    cursor: pointer;
-}
-#educationDiv .col-lg-5:hover{
-    -webkit-box-shadow: 5px 5px 0px 5px rgba(232, 0, 0, 0.67);
-    -moz-box-shadow:    5px 5px 0px 5px rgba(232, 0, 0, 0.67);
-    box-shadow:         5px 5px 0px 5px rgba(232, 0, 0, 0.67);
-}
-#educationDiv h4{
-    color: black;
-    font-weight: bold;
-}
-
-
-/* entire container, keeps perspective */
-.flip-container {
-    perspective: 1000;
-    transform-style: preserve-3d;
-}
-/*  UPDATED! flip the pane when hovered */
-.flip-container:hover .back {
-    transform: rotateY(0deg);
-}
-.flip-container:hover .front {
-    transform: rotateY(540deg);
-}
-
-/* flip speed goes here */
-.flipper {
-    transition: 2s;
-    transform-style: preserve-3d;
-
-    position: relative;
-}
-.flipper div{
-    background: white;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-    backface-visibility: hidden;
-    transition: 2s;
-    transform-style: preserve-3d;
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 200px;
-    min-height: 200px;
-}
-
-/*  UPDATED! front pane, placed above back */
-.front {
-    z-index: 2;
-    transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-    transform: rotateY(-540deg);
-}
-
-#team{
-    text-align: center;
-}
-#team .col-lg-3{
-    min-height: 250px;
-}
-.divider1 h1{
-    color: #4674B7;
-    font-weight: bold;
-}
-.modal label{
-    color: black;
-}
-.modal span{
-    color: forestgreen;
-}
-.greywrap span, .greywrap p{
-    color: forestgreen;
-}
-.navbar-header button {
-    background-image: url('../img/right.png');
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 80px;
-    height: 80px;
-    border: 4px solid black;
-    border-radius: 15px;
-    z-index: 100000;
-    overflow: hidden;
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-}
-.navbar-header .collapsed {
-    background-image: url('../img/left.png');
-}
-.navbar-collapse.in .sidebarPill{
-    max-width: 100px;
 }
 .menu-tooltip{
     display: block;
@@ -1477,4 +1179,34 @@ box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
 }
 #contactContainer button:hover{
     background-color: black;
+}
+
+@media (max-width: 1000px) {
+    .menubar{
+        display: none ! important;
+    }
+    .navbar{
+        display: block ! important;
+    }
+}
+
+@media (max-device-width: 1000px){
+    .menubar{
+        display: none ! important;
+    }
+    .navbar{
+        display: block ! important;
+    }
+}
+
+@media (max-width: 500px) {
+    body{
+        padding-top: 250px;
+    }
+}
+
+@media (max-device-width: 500px){
+    body{
+        padding-top: 250px;
+    }
 }

@@ -36,7 +36,6 @@ define([
           'contact': 'contact',
           'about': 'about',
           'designer': 'designer',
-          'collection': 'collection',
           'en': 'en',
           'es': 'es',
           'fr': 'fr',
