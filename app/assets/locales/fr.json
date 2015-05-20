@@ -23,8 +23,10 @@
   'designerItem1b': '“Emerge” Mercedes Benz Fashion Week San Jose 2014',
   'designerItem1c': '“Emerge” Mercedes Benz Fashion Week San Jose 2015',
   'designerItem2a': 'Style Pour la photographie de mode séminaire “Desde la toma hasta el producto final” of Universidad Creativa donnée par Mato Farroni de l´Argentine.',
-  'designerItem2b': 'Assistant de Style et de production dans le  Traffic magazine.',
-  'stylingText': 'Styling in coolaboration with María José Chavarría. Photography: Mato Farroni, Daniel Mora.',
+  'designerItem2b': 'Assistant de Style et de production dans le Traffic magazine.',
+  'stylingText': 'Sltylisme avec María José Chavarría. Photographie: Mato Farroni, Daniel Mora',
   'collectionsSubtitle': 'À propos de Collection',
-  'comingSoon': 'Bientôt'
+  'comingSoon': 'Bientôt',
+  'insulationText': 'La collection est inspirée du travail de l’artiste Michael Kukla. Son oeuvre résulte de l’utilisation d’espaces négatifs, organiques et utilise l’hexagone comme élément essentiel. Il observe la dégradation des objets du fait de l’eau et de l’air. La collection interprète la netteté de l’artiste avec des lignes simples en jouant avec la structure et la fluidité . Outre le fait que tous les vêtements sont traités avec des produits naturels pour empêcher l’eau de pénétrer le vêtement et maintient des vêtements propres plus temps.',
+  'buttonMore': 'Plus'
 }

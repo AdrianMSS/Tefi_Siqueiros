@@ -29,6 +29,7 @@ define([
     },
 
     viewImg: function(e){
+      $("html, body").animate({ scrollTop: $(".imageView").offset().top }, 'slow');
       $(".imageView")
         .fadeOut(500, function() {
             $(".imageView").attr("src","assets/img/"+e.currentTarget.className+".jpg");
